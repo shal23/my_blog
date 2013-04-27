@@ -2,14 +2,14 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%= content_for?(:title) ? yield(:title) : "My Blog" %></title>
-    <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "My Blog" %>">
+    <title>Blog</title>
+    <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Blog" %>">
     <%= stylesheet_link_tag "application", :media => "all" %>
     <%= javascript_include_tag "application" %>
     <%= csrf_meta_tags %>
     <%= yield(:head) %>
   </head>
-  <body class="<%= controller_name %> <%= action_name %>">
+  <body style="background: grey"; class="<%= controller_name %> <%= action_name %>">
     <div class="navbar navbar-fixed-top">
       <nav class="navbar-inner">
         <div class="container">
